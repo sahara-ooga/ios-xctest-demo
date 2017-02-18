@@ -12,7 +12,6 @@
 		B61CE6861E58065300729DA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61CE6841E58065300729DA3 /* Main.storyboard */; };
 		B61CE6881E58065300729DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61CE6871E58065300729DA3 /* Assets.xcassets */; };
 		B61CE68B1E58065300729DA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61CE6891E58065300729DA3 /* LaunchScreen.storyboard */; };
-		B61CE6961E58065300729DA3 /* ios_xctest_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61CE6951E58065300729DA3 /* ios_xctest_demoTests.swift */; };
 		B61CE6A11E58065300729DA3 /* ios_xctest_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61CE6A01E58065300729DA3 /* ios_xctest_demoUITests.swift */; };
 		B61CE6B21E58073F00729DA3 /* BMICalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61CE6B11E58073F00729DA3 /* BMICalculator.swift */; };
 		B61CE6B51E58083700729DA3 /* BMICalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61CE6B41E58083700729DA3 /* BMICalculatorTests.swift */; };
@@ -46,7 +45,6 @@
 		B61CE68A1E58065300729DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B61CE68C1E58065300729DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B61CE6911E58065300729DA3 /* ios-xctest-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-xctest-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B61CE6951E58065300729DA3 /* ios_xctest_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_xctest_demoTests.swift; sourceTree = "<group>"; };
 		B61CE6971E58065300729DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B61CE69C1E58065300729DA3 /* ios-xctest-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-xctest-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61CE6A01E58065300729DA3 /* ios_xctest_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_xctest_demoUITests.swift; sourceTree = "<group>"; };
@@ -85,10 +83,10 @@
 		B61CE6741E58065200729DA3 = {
 			isa = PBXGroup;
 			children = (
+				B61CE67E1E58065300729DA3 /* Products */,
 				B61CE67F1E58065300729DA3 /* ios-xctest-demo */,
 				B61CE6941E58065300729DA3 /* ios-xctest-demoTests */,
 				B61CE69F1E58065300729DA3 /* ios-xctest-demoUITests */,
-				B61CE67E1E58065300729DA3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,9 +103,9 @@
 		B61CE67F1E58065300729DA3 /* ios-xctest-demo */ = {
 			isa = PBXGroup;
 			children = (
-				B61CE6B01E58070E00729DA3 /* Others */,
 				B61CE6AF1E58070800729DA3 /* Controllers */,
 				B61CE6AE1E58070200729DA3 /* Models */,
+				B61CE6B01E58070E00729DA3 /* Others */,
 			);
 			path = "ios-xctest-demo";
 			sourceTree = "<group>";
@@ -116,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				B61CE6B31E58082400729DA3 /* Models */,
-				B61CE6951E58065300729DA3 /* ios_xctest_demoTests.swift */,
 				B61CE6971E58065300729DA3 /* Info.plist */,
 			);
 			path = "ios-xctest-demoTests";
@@ -125,8 +122,8 @@
 		B61CE69F1E58065300729DA3 /* ios-xctest-demoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B61CE6A01E58065300729DA3 /* ios_xctest_demoUITests.swift */,
 				B61CE6A21E58065300729DA3 /* Info.plist */,
+				B61CE6A01E58065300729DA3 /* ios_xctest_demoUITests.swift */,
 			);
 			path = "ios-xctest-demoUITests";
 			sourceTree = "<group>";
@@ -137,7 +134,7 @@
 				B61CE6B11E58073F00729DA3 /* BMICalculator.swift */,
 				B61CE6BD1E5818DE00729DA3 /* ImageDownload.swift */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B61CE6AF1E58070800729DA3 /* Controllers */ = {
@@ -147,17 +144,17 @@
 				B61CE6841E58065300729DA3 /* Main.storyboard */,
 				B61CE6821E58065300729DA3 /* ViewController.swift */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		B61CE6B01E58070E00729DA3 /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				B61CE68C1E58065300729DA3 /* Info.plist */,
-				B61CE6871E58065300729DA3 /* Assets.xcassets */,
 				B61CE6801E58065300729DA3 /* AppDelegate.swift */,
+				B61CE6871E58065300729DA3 /* Assets.xcassets */,
+				B61CE68C1E58065300729DA3 /* Info.plist */,
 			);
-			name = Others;
+			path = Others;
 			sourceTree = "<group>";
 		};
 		B61CE6B31E58082400729DA3 /* Models */ = {
@@ -166,7 +163,7 @@
 				B61CE6B41E58083700729DA3 /* BMICalculatorTests.swift */,
 				B61CE6BF1E581F4400729DA3 /* ImageDownloadTests.swift */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,7 +316,6 @@
 			files = (
 				B61CE6B51E58083700729DA3 /* BMICalculatorTests.swift in Sources */,
 				B61CE6C01E581F4400729DA3 /* ImageDownloadTests.swift in Sources */,
-				B61CE6961E58065300729DA3 /* ios_xctest_demoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +349,7 @@
 				B61CE6851E58065300729DA3 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		B61CE6891E58065300729DA3 /* LaunchScreen.storyboard */ = {
@@ -361,6 +358,7 @@
 				B61CE68A1E58065300729DA3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -464,7 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
-				INFOPLIST_FILE = "ios-xctest-demo/Info.plist";
+				INFOPLIST_FILE = "ios-xctest-demo/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-xctest-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -477,7 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
-				INFOPLIST_FILE = "ios-xctest-demo/Info.plist";
+				INFOPLIST_FILE = "ios-xctest-demo/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-xctest-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -562,6 +560,7 @@
 				B61CE6A71E58065300729DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B61CE6A81E58065300729DA3 /* Build configuration list for PBXNativeTarget "ios-xctest-demoTests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +569,7 @@
 				B61CE6AA1E58065300729DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B61CE6AB1E58065300729DA3 /* Build configuration list for PBXNativeTarget "ios-xctest-demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +578,7 @@
 				B61CE6AD1E58065300729DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
