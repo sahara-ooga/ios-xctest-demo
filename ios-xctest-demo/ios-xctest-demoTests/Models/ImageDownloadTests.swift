@@ -44,7 +44,7 @@ class ImageDownloadTests: XCTestCase {
     /// パフォーマンステスト
     func testPerformanceFetchImage() {
         
-        self.measure { [weak self] () in
+        measure { [weak self] () in
             guard let weakSelf = self else { return }
             
             let expectation = weakSelf.expectation(description: "FetchImage")
