@@ -29,9 +29,11 @@ class ImageDownloadTests: XCTestCase {
         let expectation = self.expectation(description: "FetchImage")
         
         let urlString = "https://images-na.ssl-images-amazon.com/images/I/619XgyIYnBL._AC_UL115_.jpg"
-        imageDownload?.fetchImage(urlString: urlString, completionHandler:{ (data, response, error) in
+        imageDownload?.fetchImage(urlString: urlString,
+                                  completionHandler:{ (data, response, error) in
             // errorがnilであることをテスト
             XCTAssertNil(error)
+                                    
             // dataがnilでないことをテスト
             XCTAssertNotNil(data)
             expectation.fulfill()
@@ -50,7 +52,8 @@ class ImageDownloadTests: XCTestCase {
             let expectation = weakSelf.expectation(description: "FetchImage")
             let testUrlString = "https://images-na.ssl-images-amazon.com/images/I/619XgyIYnBL._AC_UL115_.jpg"
             
-            weakSelf.imageDownload?.fetchImage(urlString: testUrlString, completionHandler:{ (data, response, error) in
+            weakSelf.imageDownload?.fetchImage(urlString: testUrlString,
+                                               completionHandler:{ (data, response, error) in
                 XCTAssertNil(error)
                 XCTAssertNotNil(data)
                 expectation.fulfill()

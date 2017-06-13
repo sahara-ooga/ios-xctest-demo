@@ -26,6 +26,8 @@ class BMICalculatorTests: XCTestCase {
         let testWeight: Float = 70.0
         
         // BMICalculator.calculateの返り値が21.6と等しいことをテスト
-        XCTAssertEqual(BMICalculator.calculate(height: testHeight, weight: testWeight), 21.6)
+        XCTAssertEqual(BMICalculator.calculate(height: testHeight,
+                                               weight: testWeight),
+                       21.6)
     }
 }
